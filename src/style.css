@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+/* General
+===================================== */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+button, .button {
+    display: inline-block;
+    background-color: #0009BD;
+    margin: 0;
+    padding: 7px 16px;
+    font-size: 16px;
+    color: #fff;
+}
+
+button:hover, .button:hover {
+    color: #fff;
+}
+
+p {
+    display: block;
+    line-height: 1.5em;
+    padding: 0 0 1em 0;
+}
+
+/* Header
+===================================== */
+
+header {
+    width: 100%;
+    background-color: rgb(255,255,255);
+    padding: 34px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.13);
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 0 0 34px;
+    position: relative;
+    top: 5px;
+}
+
+header nav ul li a {
+    color: #333;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #333;
+    text-decoration: none;
+    opacity: 0.89;
+}
+
+/* Featured Section
+===================================== */
+
+#featured {
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+}
+
+#featured-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.34);
+}
+
+/* Featured Graphic
+===================================== */
+
+#featured-graphic {
+    width: 446px;
+    height: 324px;
+    overflow: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8.9em;
+    margin-left: -223px;
+}
+
+#featured-graphic #top-rect {
+    width: 444px;
+    height: 113px;
+    border-top: 21px solid rgb(255,255,255);
+    border-right: 21px solid rgb(255,255,255);
+    border-left: 21px solid rgb(255,255,255);
+    position: relative;
+    z-index: 2;
+}
+
+#featured-graphic #top-rect h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+#featured-graphic #bottom-rect {
+    width: 444px;
+    height: 113px;
+    border-bottom: 21px solid rgb(255,255,255);
+    border-right: 21px solid rgb(255,255,255);
+    border-left: 21px solid rgb(255,255,255);
+    margin-top: -27px;
+    position: relative;
+    z-index: 2;
+}
+
+#featured-graphic #bottom-rect h5 {
+    margin: 0;
+    padding: 48px 0 0 0;
+    font-size: 21px;
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#featured-graphic #center-rect {
+    width: 477px;
+    height: 150px;
+    text-align: center;
+    background-color: rgba(0,9,189,0.55);
+    margin: -27px 0 0 -17px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+#featured-graphic #center-rect h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 150px;
+    color: rgb(255,255,255);
+}
+
+/* Countdown
+===================================== */
+
+#countdown {
+    padding: 34px 0;
+    background-color: #FAFAFE;
+}
+
+#countdown .col-md-3 {
+    border-right: 1px solid #e5e5e5;
+}
+
+#countdown .col-md-3:last-of-type {
+    border-right: none;
+}
+
+#countdown h1 {
+    font-size: 55px;
+    margin: -10px 0 0 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+#countdown hr {
+    margin: 34px auto;
+    padding: 0;
+    width: 62px;
+    border: 2px solid #0009BD;
+}
+
+#countdown h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+/* Headline
+===================================== */
+
+.headline h1 {
+    margin: 0 0 13px 0;
+    padding: 0;
+    font-size: 27px;
+    color: #0009BD;
+}
+
+.headline hr {
+    margin: 0 0 55px 0;
+    padding: 0;
+    width: 65px;
+    border: 2px solid #0009BD;
+}
+
+/* Last Year
+===================================== */
+
+#last-year {
+    margin: 89px 0 0 0;
+}
+
+#last-year #video-container {
+    position: relative;
+}
+
+#last-year #play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -26.5px;
+    margin-left: -33px;
+    cursor: pointer;
+}
+
+video {
+    cursor: pointer;
+}
+
+/* About the Event
+===================================== */
+
+#about-the-event {
+    margin: 0 0 89px 0;
+}
+
+#about-the-event .headline {
+    margin: 89px 0 0 0;
+}
+
+#about-the-event p:first-of-type {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* FAQ
+===================================== */
+
+#faq {
+    padding-top: 55px;
+}
+
+#faq .item {
+    margin: 0 0 21px 0;
+}
+
+#faq .item:last-of-type {
+    margin-bottom: 0;
+}
+
+#faq .item .question {
+    background-image: url('assets/icon_expand.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 0 0 0 29px;
+    cursor: pointer;
+}
+
+#faq .item .answer {
+    border-left: 1px solid #e5e5e5;
+    padding: 16px 0 16px 21px;
+    margin: 16px 0 0 6px;
+    display: none;
+}
+
+/* Sign Up
+===================================== */
+
+#sign-up {
+    background-color: #FAFAFE;
+    padding: 55px;
+    width: 100%;
+}
+
+#sign-up input[type="text"] {
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin: 0 0 34px 0;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    outline: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+#svn:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#svn select {
+    float: left;
+    width: 30%;
+    appearance: none;
+    -webkit-apppearance: none;
+    -moz-appearance: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 10px 16px;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    font-weight: 400;
+    color: #333;
+    background-image: url('assets/icon_dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: center right 16px;
+}
+
+#sign-up #svn input[type="text"] {
+    float: left; 
+    display: inline-block;
+    width: 70%;
+}
+
+#sign-up button {
+    color: #fff;
+    outline: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    margin-top: 0;
+}
+
+#sign-up button:hover {
+    opacity: 0.9;
+}
+
+#sign-up button:active {
+    box-shadow: none;
+}
+
+/* Footer
+===================================== */
+
+footer {
+    padding: 89px 0;
+}
+
+footer p {
+    margin: 0;
+    position: relative;
+    top: 10px;
+}
+
+footer h3 {
+    font-size: 21px;
+    color: #0009BD;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+footer ul li {
+    margin: 0 0 0 16px;
+    display: inline-block;
+}
+
+footer ul li:hover {
+    opacity: 0.8;
+}
+
+/* Alert
+===================================== */
+
+.alert-message {
+    margin: 34px 0 0 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.alert-message img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.alert-message p {
+    display: inline-block;
+    margin: 0 0 0 16px;
+    padding: 0;
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    top: 1px;
+}
+
+.error-alert {
+    background-color: rgba(238, 88, 88, 0.89);
+    border: 1px solid rgba(238, 88, 88, 0.95);
+    padding: 16px;
+}
+
+.success-alert {
+    background-color: rgba(119, 172, 73, 0.89);
+    border: 1px solid rgba(119, 172, 73, 0.95);
+    padding: 16px;
+}
+
+/* Responsive Design
+===================================== */
+
+@media only screen and (max-width : 992px) {
+    #sign-up {
+        margin-top: 55px;
+    } 
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    header nav {
+        display: none;
+    }
+    #featured-graphic {
+        -ms-transform: scale(0.65, 0.65); /* IE 9 */
+        -webkit-transform: scale(0.65, 0.65); /* Safari */
+        transform: scale(0.65, 0.65);
+    }
+    #countdown h1 {
+        font-size: 40px;
+    }
+    #countdown hr {
+        margin: 21px auto;
+    }
+    #sign-up {
+        padding: 0;
+        background-color: #fff;
+    }
+    footer .text-right {
+        text-align: left;
+        margin-top: 34px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    #countdown {
+        display: none;
+    }
+    #svn select {
+        width: 40%;
+    }
+    #sign-up #svn input[type="text"] {
+        width: 60%;
+    }
+}

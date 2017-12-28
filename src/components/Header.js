@@ -1,0 +1,27 @@
+import React from 'react';
+import logo from '../assets/logo.png';
+
+import Navigation from './Navigation';
+
+class Header extends React.Component {
+    render() {
+        return (
+            <header>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xs-4">
+                            <a href="#featured">
+                                <img src={logo} alt="Hack AUBG Logo" />
+                            </a>
+                        </div>
+                        <div className="col-xs-8 text-right">
+                            <Navigation />
+                        </div>
+                    </div>
+                </div>
+            </header>
+        );
+    }
+}
+
+export default Header;
