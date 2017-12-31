@@ -22,7 +22,6 @@ class App extends Component {
         <Header />
         <Featured />
         <Countdown />
-        <LastYear />
         <AboutTheEvent />
         <FAQSignUp />
         <Footer />

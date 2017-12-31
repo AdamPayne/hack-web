@@ -5,7 +5,7 @@ class FeaturedGraphic extends React.Component {
         return (
             <div id="featured-graphic">
                 <div id="top-rect">
-                    <h5>March 12</h5>
+                    <h5>March 23</h5>
                 </div>
                 <div id="center-rect">
                     <h1>Hack // AUBG</h1>

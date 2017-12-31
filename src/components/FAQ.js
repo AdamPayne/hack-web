@@ -8,10 +8,12 @@ class FAQ extends React.Component {
         return (
             <div id="faq">
                 <Headline>Frequently Asked Questions</Headline>
-                <Question id="item01" question="Aliquam erat augue, sollicitudin sit amet magna et, interdum semper est." answer="Etiam sagittis nulla tellus, nec lacinia nulla viverra" />
-                <Question id="item02" question="Morbi condimentum vel felis vitae convallis." answer="Etiam sagittis nulla tellus, nec lacinia nulla viverra" />
-                <Question id="item03" question="Nam nunc diam, consequat nec vehicula at, sollicitudin tristique ipsum." answer="Etiam sagittis nulla tellus, nec lacinia nulla viverra" />
-                <Question id="item04" question="Aliquam erat augue, sollicitudin sit amet magna et, interdum semper est." answer="Etiam sagittis nulla tellus, nec lacinia nulla viverra vel. Mauris lacus nulla, efficitur non fringilla id, scelerisque in ante." />
+                <Question id="item01" question="Who can attend?" answer="Everyone is welcome! Students, developers, designers, entrepreneurs, enthusiasts, hobbyists, hackers, etc." />
+                <Question id="item02" question="How many people can be on a team?" answer="Teams may contain between 2 and 5 people (inclusively). If you don't have a team prior to the hackathon, that's completely fine - we will be holding a team-matching session at the beginning of HackAUBG. As organizers we want to have equally balanced teams so we would not allow a team to have more than one senior developer." />
+                <Question id="item03" question="How much is this going to cost me?" answer="Admission is free for all! Food and drinks are on us. Seats are limited though so be quick to register!" />
+                <Question id="item04" question="What should I bring?" answer="Everyone should bring with him/her a laptop for the hackathon. If you want to work on a hardware project, don't forget to bring the devices you plan on working with." />
+                <Question id="item05" question="What can my team build?" answer="We will announce the exact topic for the hackathon at the beginning of the event" />
+                <Question id="item06" question="What if I have a question that wasn't answered here?" answer="We’re here for you! Send us an email at info@hackaubg.org or feel free to reach out to us on Facebook." />
             </div>
         );
     }
