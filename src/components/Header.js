@@ -11,7 +11,7 @@ class Header extends React.Component {
                     <div className="row">
                         <div className="col-xs-4">
                             <a href="#featured">
-                                <img src={logo} alt="Hack AUBG Logo" />
+                                <img src={logo} alt="HackAUBG Logo" />
                             </a>
                         </div>
                         <div className="col-xs-8 text-right">

@@ -5,7 +5,6 @@ class Navigation extends React.Component {
         return (
             <nav>
                 <ul>
-                    <li><a href="#last-year">Last Year</a></li>
                     <li><a href="#about-the-event">About the Event</a></li>
                     <li><a href="#sign-up" className="button">Sign Up</a></li>
                 </ul>

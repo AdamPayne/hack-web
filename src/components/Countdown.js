@@ -11,7 +11,7 @@ class Countdown extends React.Component {
         }
     }
     componentDidMount() {
-        var countDownDate = new Date("March 11, 2018 12:59:59").getTime();
+        var countDownDate = new Date("March 23, 2018 19:00:00").getTime();
 
         var x = setInterval(() => {
             

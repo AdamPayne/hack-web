@@ -11,15 +11,15 @@ class Footer extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-6">
-                            <p>&copy; Hack AUBG 2017</p>
+                            <p>&copy; HackAUBG 2018</p>
                         </div>
                         <div className="col-sm-6 text-right">
                             <div id="follow-us">
                                 <h3>Follow us</h3>
                                 <ul>
-                                    <li><a href="#facebook"><img src={FacebookIcon} alt="Facebook" /></a></li>
-                                    <li><a href="#youtube"><img src={YoutubeIcon} alt="Youtube" /></a></li>
-                                    <li><a href="#instagram"><img src={InstagramIcon} alt="Instagram" /></a></li>
+                                    <li><a href="https://www.facebook.com/TheHubAUBG"><img src={FacebookIcon} alt="Facebook" /></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UChdtBZBvaK9XZurP3GjPDug"><img src={YoutubeIcon} alt="Youtube" /></a></li>
+                                    <li><a href="https://www.instagram.com/thehubaubg"><img src={InstagramIcon} alt="Instagram" /></a></li>
                                 </ul>
                             </div>
                         </div>
