@@ -3,7 +3,7 @@ import Headline from './Headline';
 import PartnersHeadline from './PartnersHeadline';
 
 import microsoftLogo from '../assets/partners/microsoft.png';
-import dreamixLogo from '../assets/partners/dreamix.png';
+import dreamixLogo from '../assets/partners/dreamix.jpg';
 import scalefocusLogo from '../assets/partners/scalefocus.png';
 import jobtigerLogo from '../assets/partners/jobtiger.png';
 import documasterLogo from '../assets/partners/documaster.png';
