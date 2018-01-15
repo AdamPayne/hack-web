@@ -7,6 +7,7 @@ import Featured from './components/Featured';
 import Countdown from './components/Countdown';
 import LastYear from './components/LastYear';
 import AboutTheEvent from './components/AboutTheEvent';
+import Partners from './components/Partners';
 import FAQSignUp from './components/FAQSignUp';
 import Footer from './components/Footer';
 
@@ -23,6 +24,7 @@ class App extends Component {
         <Featured />
         <Countdown />
         <AboutTheEvent />
+        <Partners />
         <FAQSignUp />
         <Footer />
       </div>

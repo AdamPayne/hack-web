@@ -435,6 +435,45 @@ footer ul li:hover {
     padding: 16px;
 }
 
+/* PartnersHeadline
+===================================== */
+
+.partners-headline {
+    width: 100%;
+    text-align: center;
+}
+
+.partners-headline h1 {
+    margin: 34px 0 13px 0;
+    padding: 0;
+    font-size: 27px;
+    color: #333;
+}
+
+.partners-headline hr {
+    margin: 0 auto 34px auto;
+    padding: 0;
+    width: 65px;
+    border: 2px solid #0009BD;
+}
+
+/* Partners
+===================================== */
+
+#partners img {
+    max-width: 75%;
+    margin: 0;
+    padding: 0;
+}
+
+#partners {
+    margin-bottom: 55px;
+}
+
+.partner {
+    line-height: 200px;
+}
+
 /* Responsive Design
 ===================================== */
 
