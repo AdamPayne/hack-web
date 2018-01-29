@@ -2,12 +2,11 @@ import React from 'react';
 import Headline from './Headline';
 import PartnersHeadline from './PartnersHeadline';
 
-import microsoftLogo from '../assets/partners/microsoft.png';
-import dreamixLogo from '../assets/partners/dreamix.jpg';
-import scalefocusLogo from '../assets/partners/scalefocus.png';
-import jobtigerLogo from '../assets/partners/jobtiger.png';
-import documasterLogo from '../assets/partners/documaster.png';
 import sitegroundLogo from '../assets/partners/siteground.png';
+import skyscannerLogo from '../assets/partners/skyscanner.png';
+import droxicLogo from '../assets/partners/droxic.png';
+import scalefocusLogo from '../assets/partners/scalefocus.png';
+import documasterLogo from '../assets/partners/documaster.png';
 import coresnetworksLogo from '../assets/partners/coresnetworks.png';
 
 class Partners extends React.Component {
@@ -22,13 +21,18 @@ class Partners extends React.Component {
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-                            <PartnersHeadline color="#723191">General Partner</PartnersHeadline>
+                            <PartnersHeadline color="#91a3b0">Platinum Partners</PartnersHeadline>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-12 text-center">
+                        <div className="col-md-6 text-center">
                             <div className="partner">
-                                <img src={microsoftLogo} alt="Microsoft" />
+                                <img src={sitegroundLogo} alt="SiteGround" />
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <img src={skyscannerLogo} alt="Skyscanner" />
                             </div>
                         </div>
                     </div>
@@ -38,43 +42,9 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 text-center">
+                        <div className="col-md-6 col-md-offset-3 text-center">
                             <div className="partner">
-                                <img src={dreamixLogo} alt="Dreamix" />
-                            </div>
-                        </div>
-                        <div className="col-md-6 text-center">
-                            <div className="partner">
-                                <img src={scalefocusLogo} alt="ScaleFocus" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6 text-center">
-                            <div className="partner">
-                                <img src={jobtigerLogo} alt="JobTiger" />
-                            </div>
-                        </div>
-                        <div className="col-md-6 text-center">
-                            <div className="partner">
-                                <img src={documasterLogo} alt="Documaster" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <PartnersHeadline color="#b2b2b2">Silver Partners</PartnersHeadline>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6 text-center">
-                            <div className="partner">
-                                <img src={sitegroundLogo} alt="Siteground" />
-                            </div>
-                        </div>
-                        <div className="col-md-6 text-center">
-                            <div className="partner">
-                                <img src={coresnetworksLogo} alt="CoresNetworks" />
+                                <img src={droxicLogo} alt="Droxic" />
                             </div>
                         </div>
                     </div>

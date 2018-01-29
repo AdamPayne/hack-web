@@ -1,9 +1,12 @@
 {
-  "main.css": "static/css/main.efbd88e4.css",
-  "main.css.map": "static/css/main.efbd88e4.css.map",
-  "main.js": "static/js/main.e97e9809.js",
-  "main.js.map": "static/js/main.e97e9809.js.map",
+  "main.css": "static/css/main.191799dc.css",
+  "main.css.map": "static/css/main.191799dc.css.map",
+  "main.js": "static/js/main.0edfbb2d.js",
+  "main.js.map": "static/js/main.0edfbb2d.js.map",
   "static\\media\\background.jpg": "static/media/background.c48aa099.jpg",
+  "static\\media\\coresnetworks.png": "static/media/coresnetworks.2a8285fd.png",
+  "static\\media\\documaster.png": "static/media/documaster.d2a5101f.png",
+  "static\\media\\droxic.png": "static/media/droxic.cf7c0423.png",
   "static\\media\\glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
   "static\\media\\glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.f7214668.svg",
   "static\\media\\glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
@@ -17,5 +20,7 @@
   "static\\media\\icon_play.svg": "static/media/icon_play.f482d120.svg",
   "static\\media\\icon_success.svg": "static/media/icon_success.3cd3b485.svg",
   "static\\media\\icon_youtube.svg": "static/media/icon_youtube.19eeee8d.svg",
-  "static\\media\\movie.mp4": "static/media/movie.b05660d0.mp4"
+  "static\\media\\movie.mp4": "static/media/movie.b05660d0.mp4",
+  "static\\media\\scalefocus.png": "static/media/scalefocus.588f5151.png",
+  "static\\media\\siteground.png": "static/media/siteground.47b3d726.png"
 }
