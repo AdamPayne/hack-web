@@ -12,6 +12,8 @@ class SignUp extends React.Component {
             email: '',
             svn_service: 0,
             svn_username: '',
+            field: 'Developer',
+            expertise: 'Junior',
             emailTaken: 0,
             emailValid: true,
             signupSuccessful: false,
@@ -22,6 +24,8 @@ class SignUp extends React.Component {
         this.setEmail = this.setEmail.bind(this);
         this.setSvnUsername = this.setSvnUsername.bind(this);
         this.setSvnService = this.setSvnService.bind(this);
+        this.setField = this.setField.bind(this);
+        this.setExpertise = this.setExpertise.bind(this);
     }
     signUpHandler() {
         if (this.state.name === '') {
@@ -54,7 +58,9 @@ class SignUp extends React.Component {
                         name: this.state.name,
                         email: this.state.email,
                         svn_service: this.state.svn_service,
-                        svn_username: this.state.svn_username
+                        svn_username: this.state.svn_username,
+                        field: this.state.field,
+                        expertise: this.state.expertise
                     })
                 })
                     .then(res => res.json())
@@ -119,6 +125,12 @@ class SignUp extends React.Component {
     setSvnService(e) {
         this.setState({ svn_service: e.target.value });
     }
+    setField(e) {
+        this.setState({ field: e.target.value });
+    }
+    setExpertise(e) {
+        this.setState({ expertise: e.target.value });
+    }
     render() {
         return (
             <div id="sign-up">
@@ -131,6 +143,23 @@ class SignUp extends React.Component {
                         <option value="1">Bitbucket</option>
                     </select>
                     <input type="text" value={this.state.svn_username} onChange={this.setSvnUsername} placeholder="Username" />
+                </div>
+                <div class="fe-parent">
+                    <p class="fe-label">You are a:</p>
+                    <select id="field" onChange={this.setField}>
+                        <option value="Developer">Developer</option>
+                        <option value="Designer">Designer</option>
+                        <option value="Entrepreneur">Entrepreneur</option>
+                        <option value="Enthusiast">Enthusiast</option>
+                    </select>
+                </div>
+                <div class="fe-parent">
+                    <p class="fe-label">Level of Expertise:</p>
+                    <select id="expertise" onChange={this.setExpertise}>
+                        <option value="Junior">Junior</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Senior">Senior</option>
+                    </select>
                 </div>
                 <button onClick={this.signUpHandler}>Sign Up</button>
                 {this.renderResponse()}
