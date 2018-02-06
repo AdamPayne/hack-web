@@ -4,6 +4,8 @@ import Headline from './Headline';
 
 import Alert from './Alert';
 
+import loader from '../assets/loader.svg';
+
 class SignUp extends React.Component {
     constructor(props) {
         super(props);
@@ -45,9 +47,13 @@ class SignUp extends React.Component {
             });
         } else {
             this.setState({
-                emptyField: false
+                emptyField: false,
+                emailValid: true,
+                emailTaken: 0
             });
             this.checkEmail(() => {
+                document.getElementById('sign-up-loader').style.display = 'block';
+                document.getElementById('sign-up-form').style.display = 'none';
                 fetch("https://glacial-ridge-92711.herokuapp.com/competitors", {
                     method: 'post',
                     headers: {
@@ -64,7 +70,11 @@ class SignUp extends React.Component {
                     })
                 })
                     .then(res => res.json())
-                    .then((res) => this.setState({signupSuccessful: true}));
+                    .then((res) => {
+                        document.getElementById('sign-up-loader').style.display = 'none';
+                        document.getElementById('sign-up-form').style.display = 'block';
+                        this.setState({ signupSuccessful: true });
+                    });
             });
         }
     }
@@ -72,7 +82,7 @@ class SignUp extends React.Component {
         fetch("https://glacial-ridge-92711.herokuapp.com/competitors/email/" + this.state.email)
             .then(res => res.json())
             .then(res => {
-                if (this.validateEmail === false) {
+                if (this.validateEmail() === false) {
                     this.setState({ 
                         emailValid: false,
                         signupSuccessful: false,
@@ -133,36 +143,43 @@ class SignUp extends React.Component {
     }
     render() {
         return (
-            <div id="sign-up">
-                <Headline>Sign Up</Headline>
-                <input type="text" value={this.state.name} onChange={this.setName} placeholder="Name" />
-                <input type="text" value={this.state.email} onChange={this.setEmail} placeholder="Email" />
-                <div id="svn">
-                    <select onChange={this.setSvnService}>
-                        <option value="0">GitHub</option>
-                        <option value="1">Bitbucket</option>
-                    </select>
-                    <input type="text" value={this.state.svn_username} onChange={this.setSvnUsername} placeholder="Username" />
+            <div>
+                <div id="sign-up">
+                    <Headline>Sign Up</Headline>
+                    <div id="sign-up-loader">
+                        <img src={loader} alt="Loading.." />
+                    </div>
+                    <div id="sign-up-form">
+                        <input type="text" value={this.state.name} onChange={this.setName} placeholder="Name" />
+                        <input type="text" value={this.state.email} onChange={this.setEmail} placeholder="Email" />
+                        <div id="svn">
+                            <select onChange={this.setSvnService}>
+                                <option value="0">GitHub</option>
+                                <option value="1">Bitbucket</option>
+                            </select>
+                            <input type="text" value={this.state.svn_username} onChange={this.setSvnUsername} placeholder="Username" />
+                        </div>
+                        <div class="fe-parent">
+                            <p class="fe-label">You are a:</p>
+                            <select id="field" onChange={this.setField}>
+                                <option value="Developer">Developer</option>
+                                <option value="Designer">Designer</option>
+                                <option value="Entrepreneur">Entrepreneur</option>
+                                <option value="Enthusiast">Enthusiast</option>
+                            </select>
+                        </div>
+                        <div class="fe-parent">
+                            <p class="fe-label">Level of Expertise:</p>
+                            <select id="expertise" onChange={this.setExpertise}>
+                                <option value="Junior">Junior</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                        </div>
+                        <button onClick={this.signUpHandler}>Sign Up</button>
+                        {this.renderResponse()}
+                    </div>
                 </div>
-                <div class="fe-parent">
-                    <p class="fe-label">You are a:</p>
-                    <select id="field" onChange={this.setField}>
-                        <option value="Developer">Developer</option>
-                        <option value="Designer">Designer</option>
-                        <option value="Entrepreneur">Entrepreneur</option>
-                        <option value="Enthusiast">Enthusiast</option>
-                    </select>
-                </div>
-                <div class="fe-parent">
-                    <p class="fe-label">Level of Expertise:</p>
-                    <select id="expertise" onChange={this.setExpertise}>
-                        <option value="Junior">Junior</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Senior">Senior</option>
-                    </select>
-                </div>
-                <button onClick={this.signUpHandler}>Sign Up</button>
-                {this.renderResponse()}
             </div>
         );
     }

@@ -285,6 +285,12 @@ video {
 /* Sign Up
 ===================================== */
 
+#sign-up-loader { 
+    width: 100%;
+    text-align: center;
+    display: none; 
+}
+
 #sign-up {
     background-color: #FAFAFE;
     padding: 55px;
