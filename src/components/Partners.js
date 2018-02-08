@@ -20,8 +20,13 @@ import sbtechLogo from '../assets/partners/sbtech.png';
 import strypesLogo from '../assets/partners/strypes.png';
 
 // Media
+import aubgDailyLogo from '../assets/partners/AUBG_Daily.png';
+import auraLogo from '../assets/partners/auralogo-01.png';
 import blagoevgradEuLogo from '../assets/partners/Blagoevgrad_eu.png';
+import bnrBlagoevgradLogo from '../assets/partners/bnr_blagoevgrad.jpg';
+import eventsMediaLogo from '../assets/partners/logo-eventsmedia.png';
 import peikaLogo from '../assets/partners/peika_bg.jpg';
+import vipMagazineLogo from '../assets/partners/VIP_Magazine_logo.png';
 
 // Industry
 import codingGirlsLogo from '../assets/partners/coding_girls.png';
@@ -127,12 +132,43 @@ class Partners extends React.Component {
                     <div className="row">
                         <div className="col-md-6 text-center">
                             <div className="partner">
+                                <a href="http://aubgdaily.com"><img src={aubgDailyLogo} alt="AUBG Daily" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6  text-center">
+                            <div className="partner">
+                                <a href="http://www.radio-aura.org"><img src={auraLogo} alt="Radio AURA" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
                                 <a href="http://www.blagoevgrad.eu"><img src={blagoevgradEuLogo} alt="Blagoevgrad.eu" /></a>
                             </div>
                         </div>
                         <div className="col-md-6  text-center">
                             <div className="partner">
+                                <a href="http://bnr.bg/blagoevgrad"><img src={bnrBlagoevgradLogo} alt="Radio Blagoevgrad" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="https://www.eventsmedia.bg"><img src={eventsMediaLogo} alt="EventsMedia.bg" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6  text-center">
+                            <div className="partner">
                                 <a href="http://www.peika.bg"><img src={peikaLogo} alt="Peika.bg" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 col-md-offset-3 text-center">
+                            <div className="partner">
+                                <a href="http://spisanievip.com"><img src={vipMagazineLogo} alt="VIP Magazine" /></a>
                             </div>
                         </div>
                     </div>
