@@ -16,6 +16,8 @@ class SignUp extends React.Component {
             svn_username: '',
             field: 'Developer',
             expertise: 'Junior',
+            fileName: '',
+            fileInput: false,
             emailTaken: 0,
             emailValid: true,
             signupSuccessful: false,
@@ -28,6 +30,7 @@ class SignUp extends React.Component {
         this.setSvnService = this.setSvnService.bind(this);
         this.setField = this.setField.bind(this);
         this.setExpertise = this.setExpertise.bind(this);
+        this.setFileInput = this.setFileInput.bind(this);
     }
     signUpHandler() {
         if (this.state.name === '') {
@@ -52,29 +55,77 @@ class SignUp extends React.Component {
                 emailTaken: 0
             });
             this.checkEmail(() => {
+                const fileInputField = document.getElementById('file-input-field');
                 document.getElementById('sign-up-loader').style.display = 'block';
                 document.getElementById('sign-up-form').style.display = 'none';
-                fetch("https://glacial-ridge-92711.herokuapp.com/competitors", {
-                    method: 'post',
-                    headers: {
-                        'Accept': 'application/json, text/plain, */*',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        name: this.state.name,
-                        email: this.state.email,
-                        svn_service: this.state.svn_service,
-                        svn_username: this.state.svn_username,
-                        field: this.state.field,
-                        expertise: this.state.expertise
+                if (this.state.fileInput) {
+                    fetch("https://glacial-ridge-92711.herokuapp.com/competitors", {
+                        method: 'post',
+                        headers: {
+                            'Accept': 'application/json, text/plain, */*',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: this.state.name,
+                            email: this.state.email,
+                            svn_service: this.state.svn_service,
+                            svn_username: this.state.svn_username,
+                            field: this.state.field,
+                            expertise: this.state.expertise,
+                            has_cv: 'true'
+                        })
                     })
-                })
+                    .then(res => res.json())
+                    .then((res) => {
+                        function getFileName(input) {
+                            var fullPath = input.value;
+                            if (fullPath) {
+                                var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+                                var filename = fullPath.substring(startIndex);
+                                if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+                                    filename = filename.substring(1);
+                                }
+                                return filename;
+                            }
+                        }
+                        const data = new FormData();
+                        data.append('cv', fileInputField.files[0]);
+                        console.log(res);
+                        fetch(`https://glacial-ridge-92711.herokuapp.com/cv/upload?id=${res.id}&filename=${getFileName(fileInputField)}`, {
+                            method: 'post',
+                            body: data
+                        })
+                        .then(res => res.json)
+                        .then((res) => {
+                            document.getElementById('sign-up-loader').style.display = 'none';
+                            document.getElementById('sign-up-form').style.display = 'block';
+                            this.setState({ signupSuccessful: true });
+                        });
+                    });
+                } else {
+                    fetch("https://glacial-ridge-92711.herokuapp.com/competitors", {
+                        method: 'post',
+                        headers: {
+                            'Accept': 'application/json, text/plain, */*',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: this.state.name,
+                            email: this.state.email,
+                            svn_service: this.state.svn_service,
+                            svn_username: this.state.svn_username,
+                            field: this.state.field,
+                            expertise: this.state.expertise,
+                            has_cv: 'false'
+                        })
+                    })
                     .then(res => res.json())
                     .then((res) => {
                         document.getElementById('sign-up-loader').style.display = 'none';
                         document.getElementById('sign-up-form').style.display = 'block';
                         this.setState({ signupSuccessful: true });
                     });
+                }
             });
         }
     }
@@ -141,6 +192,36 @@ class SignUp extends React.Component {
     setExpertise(e) {
         this.setState({ expertise: e.target.value });
     }
+    setFileInput() {
+        const fileInputField = document.getElementById('file-input-field');
+        function validate(){
+            var size=15000000;
+            var file_size=fileInputField.files[0].size;
+            console.log("File Size: " + file_size);
+            if(file_size>=size) {
+                return false;
+            }
+        }
+        if (fileInputField.files[0]) {
+            if (validate() === false) {
+                alert("File is too large. The maximum file size for the CV is 15mb.");
+                this.setState({
+                    fileName: '',
+                    fileInput: false,
+                });
+            } else {
+                this.setState({ 
+                    fileName: fileInputField.files[0].name,
+                    fileInput: true,
+                });
+            }
+        } else {
+            this.setState({ 
+                fileName: '',
+                fileInput: false,
+            });
+        }
+    }
     render() {
         return (
             <div>
@@ -175,6 +256,13 @@ class SignUp extends React.Component {
                                 <option value="Intermediate">Intermediate</option>
                                 <option value="Senior">Senior</option>
                             </select>
+                        </div>
+                        <div class="fe-parent">
+                            <p class="fe-label">CV (Optional):</p>
+                            <div id="file-input">
+                                <input onChange={this.setFileInput} id="file-input-field" type="file" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain, application/pdf, image/*" />
+                                <input type="text" value={this.state.fileName} placeholder="Select a file.." />
+                            </div>
                         </div>
                         <button onClick={this.signUpHandler}>Sign Up</button>
                         {this.renderResponse()}
