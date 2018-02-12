@@ -14,7 +14,7 @@ class FAQ extends React.Component {
                 <Question id="item04" question="What should I bring?" answer="Everyone should bring with him/her a laptop for the hackathon. If you want to work on a hardware project, don't forget to bring the devices you plan on working with." />
                 <Question id="item05" question="What can my team build?" answer="We will announce the exact topic for the hackathon at the beginning of the event." />
                 <Question id="item06" question="Will there be prizes?" answer="Yes! They will be announced soon." />
-                <Question id="item07" question="How will you use my CV?" answer="We will give the CVs to our platinum sponsors. It's not obligatory to upload your CV in order to take part in HackAUBG." />
+                <Question id="item07" question="How will you use my CV?" answer="We will give the CVs to our platinum sponsors only, who will keep your personal data to themselves. It's not obligatory to upload your CV in order to take part in HackAUBG." />
                 <Question id="item08" question="What if I have a question that wasn't answered here?" answer="We’re here for you! Send us an email at info@hackaubg.org or feel free to reach out to us on Facebook." />
             </div>
         );
