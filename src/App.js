@@ -5,10 +5,10 @@ import './assets/bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Featured from './components/Featured';
 import Countdown from './components/Countdown';
-import LastYear from './components/LastYear';
 import AboutTheEvent from './components/AboutTheEvent';
 import Partners from './components/Partners';
 import FAQSignUp from './components/FAQSignUp';
+import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -26,6 +26,7 @@ class App extends Component {
         <AboutTheEvent />
         <Partners />
         <FAQSignUp />
+		<ContactUs />
         <Footer />
       </div>
     );

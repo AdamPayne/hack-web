@@ -59,6 +59,9 @@ class SignUp extends React.Component {
                 document.getElementById('sign-up-loader').style.display = 'block';
                 document.getElementById('sign-up-form').style.display = 'none';
                 if (this.state.fileInput) {
+                    const data = new FormData();
+                    data.append('file', fileInputField.files[0]);
+
                     fetch("https://glacial-ridge-92711.herokuapp.com/competitors", {
                         method: 'post',
                         headers: {
@@ -72,35 +75,14 @@ class SignUp extends React.Component {
                             svn_username: this.state.svn_username,
                             field: this.state.field,
                             expertise: this.state.expertise,
-                            has_cv: 'true'
+                            cv: data
                         })
                     })
                     .then(res => res.json())
                     .then((res) => {
-                        function getFileName(input) {
-                            var fullPath = input.value;
-                            if (fullPath) {
-                                var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
-                                var filename = fullPath.substring(startIndex);
-                                if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
-                                    filename = filename.substring(1);
-                                }
-                                return filename;
-                            }
-                        }
-                        const data = new FormData();
-                        data.append('cv', fileInputField.files[0]);
-                        console.log(res);
-                        fetch(`https://glacial-ridge-92711.herokuapp.com/cv/upload?id=${res.id}&filename=${getFileName(fileInputField)}`, {
-                            method: 'post',
-                            body: data
-                        })
-                        .then(res => res.json)
-                        .then((res) => {
-                            document.getElementById('sign-up-loader').style.display = 'none';
-                            document.getElementById('sign-up-form').style.display = 'block';
-                            this.setState({ signupSuccessful: true });
-                        });
+                        document.getElementById('sign-up-loader').style.display = 'none';
+                        document.getElementById('sign-up-form').style.display = 'block';
+                        this.setState({ signupSuccessful: true });
                     });
                 } else {
                     fetch("https://glacial-ridge-92711.herokuapp.com/competitors", {
@@ -115,8 +97,7 @@ class SignUp extends React.Component {
                             svn_service: this.state.svn_service,
                             svn_username: this.state.svn_username,
                             field: this.state.field,
-                            expertise: this.state.expertise,
-                            has_cv: 'false'
+                            expertise: this.state.expertise
                         })
                     })
                     .then(res => res.json())
@@ -194,27 +175,11 @@ class SignUp extends React.Component {
     }
     setFileInput() {
         const fileInputField = document.getElementById('file-input-field');
-        function validate(){
-            var size=15000000;
-            var file_size=fileInputField.files[0].size;
-            console.log("File Size: " + file_size);
-            if(file_size>=size) {
-                return false;
-            }
-        }
         if (fileInputField.files[0]) {
-            if (validate() === false) {
-                alert("File is too large. The maximum file size for the CV is 15mb.");
-                this.setState({
-                    fileName: '',
-                    fileInput: false,
-                });
-            } else {
-                this.setState({ 
-                    fileName: fileInputField.files[0].name,
-                    fileInput: true,
-                });
-            }
+            this.setState({ 
+                fileName: fileInputField.files[0].name,
+                fileInput: true,
+            });
         } else {
             this.setState({ 
                 fileName: '',
@@ -260,7 +225,7 @@ class SignUp extends React.Component {
                         <div class="fe-parent">
                             <p class="fe-label">CV (Optional):</p>
                             <div id="file-input">
-                                <input onChange={this.setFileInput} id="file-input-field" type="file" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain, application/pdf, image/*" />
+                                <input onChange={this.setFileInput} id="file-input-field" type="file" />
                                 <input type="text" value={this.state.fileName} placeholder="Select a file.." />
                             </div>
                         </div>

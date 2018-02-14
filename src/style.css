@@ -541,6 +541,29 @@ footer ul li:hover {
     margin-bottom: 34px;
 }
 
+/* ContactUs
+===================================== */
+
+#contact-us {
+	margin-top: 55px;
+}
+
+#contact-us h4 {
+	margin: 0 0 1.5em 0;
+}
+
+.addrP {
+	line-height: 1.5em;
+	margin: 0;
+}
+
+.addrP img {
+	max-width: 16px;
+	display: inline-block;
+	line-height: 1em;
+	margin-right: 0.5em;
+}
+
 /* Responsive Design
 ===================================== */
 
