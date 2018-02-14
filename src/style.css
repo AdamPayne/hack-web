@@ -564,6 +564,32 @@ footer ul li:hover {
 	margin-right: 0.5em;
 }
 
+/* Awards
+===================================== */
+
+.award {
+	width: 100%;
+	height: 317px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+#awards {
+	margin-bottom: 55px;
+}
+
+.awardPrize {
+	position: absolute;
+	top: 55px;
+	left: 50%;
+	width: 158px;
+	margin: 0 0 0 -79px;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;	
+}
+
 /* Responsive Design
 ===================================== */
 

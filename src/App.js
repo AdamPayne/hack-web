@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Featured from './components/Featured';
 import Countdown from './components/Countdown';
 import AboutTheEvent from './components/AboutTheEvent';
+import Awards from './components/Awards';
 import Partners from './components/Partners';
 import FAQSignUp from './components/FAQSignUp';
 import ContactUs from './components/ContactUs';
@@ -24,6 +25,7 @@ class App extends Component {
         <Featured />
         <Countdown />
         <AboutTheEvent />
+		<Awards />
         <Partners />
         <FAQSignUp />
 		<ContactUs />
