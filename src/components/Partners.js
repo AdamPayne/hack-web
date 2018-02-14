@@ -4,7 +4,6 @@ import PartnersHeadline from './PartnersHeadline';
 
 // Platinum
 import documasterLogo from '../assets/partners/documaster.png';
-import experianLogo from '../assets/partners/experian.png';
 import mobisystemsLogo from '../assets/partners/mobisystems.png';
 import progressLogo from '../assets/partners/progress.png';
 import sitegroundLogo from '../assets/partners/siteground.png';
@@ -25,6 +24,7 @@ import auraLogo from '../assets/partners/auralogo-01.png';
 import blagoevgradEuLogo from '../assets/partners/Blagoevgrad_eu.png';
 import bnrBlagoevgradLogo from '../assets/partners/bnr_blagoevgrad.jpg';
 import eventsMediaLogo from '../assets/partners/logo-eventsmedia.png';
+import moveBgLogo from '../assets/partners/Move_bg.png';
 import peikaLogo from '../assets/partners/peika_bg.jpg';
 import vipMagazineLogo from '../assets/partners/VIP_Magazine_logo.png';
 
@@ -55,29 +55,24 @@ class Partners extends React.Component {
                         </div>
                         <div className="col-md-6 text-center">
                             <div className="partner">
-                                <a href="https://www.experian.com"><img src={experianLogo} alt="Experian" /></a>
+                                <a href="https://www.mobisystems.com"><img src={mobisystemsLogo} alt="MobiSystems" /></a>
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 text-center">
-                            <div className="partner">
-                                <a href="https://www.mobisystems.com"><img src={mobisystemsLogo} alt="MobiSystems" /></a>
-                            </div>
-                        </div>
                         <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="https://www.progress.com"><img src={progressLogo} alt="Progress" /></a>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
                         <div className="col-md-6 text-center">
                             <div className="partner">
-                                <a href="https://www.siteground.com"><img src={sitegroundLogo} alt="SiteGround" /></a>
+                                <a href="https://jobs.siteground.bg"><img src={sitegroundLogo} alt="SiteGround" /></a>
                             </div>
                         </div>
-                        <div className="col-md-6 text-center">
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 col-md-offset-3 text-center">
                             <div className="partner">
                                 <a href="https://www.skyscanner.net"><img src={skyscannerLogo} alt="Skyscanner" /></a>
                             </div>
@@ -161,12 +156,17 @@ class Partners extends React.Component {
                         </div>
                         <div className="col-md-6  text-center">
                             <div className="partner">
-                                <a href="http://www.peika.bg"><img src={peikaLogo} alt="Peika.bg" /></a>
+                                <a href="https://move.bg"><img src={moveBgLogo} alt="MOVE.BG" /></a>
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center">
+                        <div className="col-md-6  text-center">
+                            <div className="partner">
+                                <a href="http://www.peika.bg"><img src={peikaLogo} alt="Peika.bg" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="http://spisanievip.com"><img src={vipMagazineLogo} alt="VIP Magazine" /></a>
                             </div>
