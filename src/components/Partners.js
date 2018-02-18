@@ -25,6 +25,7 @@ import blagoevgradEuLogo from '../assets/partners/Blagoevgrad_eu.png';
 import bnrBlagoevgradLogo from '../assets/partners/bnr_blagoevgrad.jpg';
 import eventsMediaLogo from '../assets/partners/logo-eventsmedia.png';
 import moveBgLogo from '../assets/partners/Move_bg.png';
+import pamedia from '../assets/partners/logopamediа.png';
 import peikaLogo from '../assets/partners/peika_bg.jpg';
 import vipMagazineLogo from '../assets/partners/VIP_Magazine_logo.png';
 
@@ -161,12 +162,19 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="http://pa-media.net"><img src={pamedia} alt="PA Media" /></a>
+                            </div>
+                        </div>
                         <div className="col-md-6  text-center">
                             <div className="partner">
                                 <a href="http://www.peika.bg"><img src={peikaLogo} alt="Peika.bg" /></a>
                             </div>
                         </div>
-                        <div className="col-md-6 text-center">
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 col-md-offset-3 text-center">
                             <div className="partner">
                                 <a href="http://spisanievip.com"><img src={vipMagazineLogo} alt="VIP Magazine" /></a>
                             </div>
