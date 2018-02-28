@@ -16,7 +16,9 @@ import scalefocusLogo from '../assets/partners/scalefocus.png';
 // Silver
 import centroidaLogo from '../assets/partners/centroida.png';
 import coresNetworksLogo from '../assets/partners/cores_networks.png';
+import sapLogo from '../assets/partners/sap.png';
 import sbtechLogo from '../assets/partners/sbtech.png';
+import shielduiLogo from '../assets/partners/shieldui.png';
 import strypesLogo from '../assets/partners/strypes.png';
 
 // Media
@@ -118,7 +120,19 @@ class Partners extends React.Component {
                     <div className="row">
                         <div className="col-md-6 text-center">
                             <div className="partner">
+                                <a href="https://www.sap.com/bulgaria/index.html"><img src={sapLogo} alt="SAP" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
                                 <a href="https://www.sbtech.com"><img src={sbtechLogo} alt="SBTech" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="https://www.shieldui.com"><img src={shielduiLogo} alt="Shield UI" /></a>
                             </div>
                         </div>
                         <div className="col-md-6 text-center">
