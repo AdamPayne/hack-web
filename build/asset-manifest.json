@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.dac568e2.css",
   "main.css.map": "static/css/main.dac568e2.css.map",
-  "main.js": "static/js/main.945d11df.js",
-  "main.js.map": "static/js/main.945d11df.js.map",
+  "main.js": "static/js/main.c1efdb3a.js",
+  "main.js.map": "static/js/main.c1efdb3a.js.map",
   "static\\media\\AUBG_Daily.png": "static/media/AUBG_Daily.0b14573a.png",
   "static\\media\\Move_bg.png": "static/media/Move_bg.f5638fd9.png",
   "static\\media\\VIP_Magazine_logo.png": "static/media/VIP_Magazine_logo.154139f2.png",
@@ -39,5 +39,6 @@
   "static\\media\\sap.png": "static/media/sap.0040e251.png",
   "static\\media\\sbtech.png": "static/media/sbtech.623e7808.png",
   "static\\media\\scalefocus.png": "static/media/scalefocus.588f5151.png",
-  "static\\media\\siteground.png": "static/media/siteground.47b3d726.png"
+  "static\\media\\siteground.png": "static/media/siteground.47b3d726.png",
+  "static\\media\\sumup.png": "static/media/sumup.c2af6f86.png"
 }

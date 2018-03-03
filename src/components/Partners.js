@@ -8,6 +8,7 @@ import mobisystemsLogo from '../assets/partners/mobisystems.png';
 import progressLogo from '../assets/partners/progress.png';
 import sitegroundLogo from '../assets/partners/siteground.png';
 import skyscannerLogo from '../assets/partners/skyscanner.png';
+import sumupLogo from '../assets/partners/sumup.png';
 
 // Gold
 import droxicLogo from '../assets/partners/droxic.png';
@@ -77,9 +78,14 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center">
+                        <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="https://www.skyscanner.net"><img src={skyscannerLogo} alt="Skyscanner" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="https://sumup.bg"><img src={sumupLogo} alt="SumUp" /></a>
                             </div>
                         </div>
                     </div>
