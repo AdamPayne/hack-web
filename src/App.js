@@ -25,7 +25,7 @@ class App extends Component {
         <Featured />
         <Countdown />
         <AboutTheEvent />
-		    {/* <Awards /> */}
+		    <Awards />
         <Partners />
         <FAQSignUp />
 		    <ContactUs />

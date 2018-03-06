@@ -8,14 +8,18 @@ import mobisystemsLogo from '../assets/partners/mobisystems.png';
 import progressLogo from '../assets/partners/progress.png';
 import sitegroundLogo from '../assets/partners/siteground.png';
 import skyscannerLogo from '../assets/partners/skyscanner.png';
+import sumupLogo from '../assets/partners/sumup.png';
 
 // Gold
 import droxicLogo from '../assets/partners/droxic.png';
 import scalefocusLogo from '../assets/partners/scalefocus.png';
 
 // Silver
+import centroidaLogo from '../assets/partners/centroida.png';
 import coresNetworksLogo from '../assets/partners/cores_networks.png';
+import sapLogo from '../assets/partners/sap.png';
 import sbtechLogo from '../assets/partners/sbtech.png';
+import shielduiLogo from '../assets/partners/shieldui.png';
 import strypesLogo from '../assets/partners/strypes.png';
 
 // Media
@@ -30,6 +34,7 @@ import peikaLogo from '../assets/partners/peika_bg.jpg';
 import vipMagazineLogo from '../assets/partners/VIP_Magazine_logo.png';
 
 // Industry
+import telerikLogo from '../assets/partners/telerik_academy.png';
 import codingGirlsLogo from '../assets/partners/coding_girls.png';
 
 
@@ -73,9 +78,14 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center">
+                        <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="https://www.skyscanner.net"><img src={skyscannerLogo} alt="Skyscanner" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="https://sumup.bg"><img src={sumupLogo} alt="SumUp" /></a>
                             </div>
                         </div>
                     </div>
@@ -104,7 +114,19 @@ class Partners extends React.Component {
                     <div className="row">
                         <div className="col-md-6 text-center">
                             <div className="partner">
+                                <a href="https://www.centroida.ai"><img src={centroidaLogo} alt="Centroida" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
                                 <a href="http://www.coresnet.bg"><img src={coresNetworksLogo} alt="Cores Networks" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="https://www.sap.com/bulgaria/index.html"><img src={sapLogo} alt="SAP" /></a>
                             </div>
                         </div>
                         <div className="col-md-6 text-center">
@@ -114,7 +136,12 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center">
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="https://www.shieldui.com"><img src={shielduiLogo} alt="Shield UI" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="https://strypes.eu"><img src={strypesLogo} alt="Strypes" /></a>
                             </div>

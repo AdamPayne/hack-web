@@ -1,14 +1,15 @@
 {
   "main.css": "static/css/main.dac568e2.css",
   "main.css.map": "static/css/main.dac568e2.css.map",
-  "main.js": "static/js/main.d4ece0d8.js",
-  "main.js.map": "static/js/main.d4ece0d8.js.map",
+  "main.js": "static/js/main.c1efdb3a.js",
+  "main.js.map": "static/js/main.c1efdb3a.js.map",
   "static\\media\\AUBG_Daily.png": "static/media/AUBG_Daily.0b14573a.png",
   "static\\media\\Move_bg.png": "static/media/Move_bg.f5638fd9.png",
   "static\\media\\VIP_Magazine_logo.png": "static/media/VIP_Magazine_logo.154139f2.png",
   "static\\media\\auralogo-01.png": "static/media/auralogo-01.ad6295b2.png",
   "static\\media\\background.jpg": "static/media/background.c48aa099.jpg",
   "static\\media\\bnr_blagoevgrad.jpg": "static/media/bnr_blagoevgrad.a097b633.jpg",
+  "static\\media\\centroida.png": "static/media/centroida.ae0bac91.png",
   "static\\media\\coding_girls.png": "static/media/coding_girls.93379e2c.png",
   "static\\media\\cores_networks.png": "static/media/cores_networks.2a8285fd.png",
   "static\\media\\cup_first_place.png": "static/media/cup_first_place.4b614b2d.png",
@@ -32,10 +33,12 @@
   "static\\media\\loader.svg": "static/media/loader.335bce5b.svg",
   "static\\media\\logo-eventsmedia.png": "static/media/logo-eventsmedia.a372f044.png",
   "static\\media\\logopamediа.png": "static/media/logopamediа.2d5998e5.png",
-  "static\\media\\mobisystems.png": "static/media/mobisystems.eac809a2.png",
+  "static\\media\\mobisystems.png": "static/media/mobisystems.c74b7d12.png",
   "static\\media\\peika_bg.jpg": "static/media/peika_bg.22c09a68.jpg",
   "static\\media\\progress.png": "static/media/progress.f6e02026.png",
+  "static\\media\\sap.png": "static/media/sap.0040e251.png",
   "static\\media\\sbtech.png": "static/media/sbtech.623e7808.png",
   "static\\media\\scalefocus.png": "static/media/scalefocus.588f5151.png",
-  "static\\media\\siteground.png": "static/media/siteground.47b3d726.png"
+  "static\\media\\siteground.png": "static/media/siteground.47b3d726.png",
+  "static\\media\\sumup.png": "static/media/sumup.c2af6f86.png"
 }

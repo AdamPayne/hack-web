@@ -12,13 +12,13 @@ class Awards extends React.Component {
                         <div className="col-md-12">
                             <Headline>Awards</Headline>
 							<div className="col-md-4">
-								<Award place="first">0 lv</Award>
+								<Award place="first">3000 BGN</Award>
 							</div>
 							<div className="col-md-4">
-								<Award place="second">0 lv</Award>
+								<Award place="second">2000 BGN</Award>
 							</div>
 							<div className="col-md-4">
-								<Award place="third">0 lv</Award>
+								<Award place="third">1000 BGN</Award>
 							</div>
                        	</div>
                     </div>
