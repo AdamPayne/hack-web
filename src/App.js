@@ -11,6 +11,8 @@ import Partners from './components/Partners';
 import FAQSignUp from './components/FAQSignUp';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
+import Mentors from './components/Mentors';
+import Jury from './components/Jury';
 
 class App extends Component {
   componentDidMount() {
@@ -26,6 +28,8 @@ class App extends Component {
         <Countdown />
         <AboutTheEvent />
 		    <Awards />
+        <Mentors />
+        <Jury />
         <Partners />
         <FAQSignUp />
 		    <ContactUs />
