@@ -31,6 +31,7 @@ import eventsMediaLogo from '../assets/partners/logo-eventsmedia.png';
 import moveBgLogo from '../assets/partners/Move_bg.png';
 import pamedia from '../assets/partners/logopamediа.png';
 import peikaLogo from '../assets/partners/peika_bg.jpg';
+import vevestiLogo from '../assets/partners/vevesti.png';
 import vipMagazineLogo from '../assets/partners/VIP_Magazine_logo.png';
 
 // Industry
@@ -201,7 +202,12 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center">
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="http://vevesti.bg"><img src={vevestiLogo} alt="vEvesti.bg" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="http://spisanievip.com"><img src={vipMagazineLogo} alt="VIP Magazine" /></a>
                             </div>
@@ -213,9 +219,14 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center">
+                        <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="https://www.coding-girls.com"><img src={codingGirlsLogo} alt="Coding Girls" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="http://telerikacademy.com"><img src={telerikLogo} alt="Telerik Academy" /></a>
                             </div>
                         </div>
                     </div>

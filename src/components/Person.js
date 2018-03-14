@@ -12,7 +12,7 @@ class Person extends React.Component {
 				</div>
 				<div className="name">{this.props.name}</div>
 				<div className="position">{this.props.position}</div>
-				<Biography>This is a long Biography. One more sentance here. Ok, done!</Biography>
+				<Biography>{this.props.biography}</Biography>
 			</div>
 		);
 	}
