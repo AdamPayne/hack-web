@@ -11,12 +11,15 @@ import skyscannerLogo from '../assets/partners/skyscanner.png';
 import sumupLogo from '../assets/partners/sumup.png';
 
 // Gold
+import agromahLogo from '../assets/partners/agromah.png';
 import droxicLogo from '../assets/partners/droxic.png';
+import redbullLogo from '../assets/partners/redbull.png';
 import scalefocusLogo from '../assets/partners/scalefocus.png';
 
 // Silver
 import centroidaLogo from '../assets/partners/centroida.png';
 import coresNetworksLogo from '../assets/partners/cores_networks.png';
+import jacobsLogo from '../assets/partners/jacobs.png';
 import sapLogo from '../assets/partners/sap.png';
 import sbtechLogo from '../assets/partners/sbtech.png';
 import shielduiLogo from '../assets/partners/shieldui.png';
@@ -28,9 +31,11 @@ import auraLogo from '../assets/partners/auralogo-01.png';
 import blagoevgradEuLogo from '../assets/partners/Blagoevgrad_eu.png';
 import bnrBlagoevgradLogo from '../assets/partners/bnr_blagoevgrad.jpg';
 import eventsMediaLogo from '../assets/partners/logo-eventsmedia.png';
+import inewsLogo from '../assets/partners/inews.png';
 import moveBgLogo from '../assets/partners/Move_bg.png';
 import pamedia from '../assets/partners/logopamediа.png';
 import peikaLogo from '../assets/partners/peika_bg.jpg';
+import vevestiLogo from '../assets/partners/vevesti.png';
 import vipMagazineLogo from '../assets/partners/VIP_Magazine_logo.png';
 
 // Industry
@@ -97,12 +102,24 @@ class Partners extends React.Component {
                     <div className="row">
                         <div className="col-md-6 text-center">
                             <div className="partner">
-                                <a href="http://droxic.com"><img src={droxicLogo} alt="Droxic" /></a>
+                                <a href="https://www.agromah.bg"><img src={agromahLogo} alt="Agromah" /></a>
                             </div>
                         </div>
                         <div className="col-md-6 text-center">
                             <div className="partner">
+                                <a href="http://droxic.com"><img src={droxicLogo} alt="Droxic" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
                                 <a href="http://www.scalefocus.com"><img src={scalefocusLogo} alt="ScaleFocus" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="https://www.redbull.com"><img src={redbullLogo} alt="Red Bull" /></a>
                             </div>
                         </div>
                     </div>
@@ -148,6 +165,13 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
+                        <div className="col-md-6 col-md-offset-3 text-center">
+                            <div className="partner">
+                                <a href="https://www.jacobscoffee.bg"><img src={jacobsLogo} alt="Jacobs" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="col-md-12">
                             <PartnersHeadline color="#FF9800">Media Partners</PartnersHeadline>
                         </div>
@@ -182,21 +206,33 @@ class Partners extends React.Component {
                                 <a href="https://www.eventsmedia.bg"><img src={eventsMediaLogo} alt="EventsMedia.bg" /></a>
                             </div>
                         </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="http://inews.bg"><img src={inewsLogo} alt="inews.bg" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="col-md-6  text-center">
                             <div className="partner">
                                 <a href="https://move.bg"><img src={moveBgLogo} alt="MOVE.BG" /></a>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
                         <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="http://pa-media.net"><img src={pamedia} alt="PA Media" /></a>
                             </div>
                         </div>
+                    </div>
+                    <div className="row">
                         <div className="col-md-6  text-center">
                             <div className="partner">
                                 <a href="http://www.peika.bg"><img src={peikaLogo} alt="Peika.bg" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="http://vevesti.bg"><img src={vevestiLogo} alt="vEvesti.bg" /></a>
                             </div>
                         </div>
                     </div>
@@ -213,9 +249,14 @@ class Partners extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center">
+                        <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="https://www.coding-girls.com"><img src={codingGirlsLogo} alt="Coding Girls" /></a>
+                            </div>
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <div className="partner">
+                                <a href="http://telerikacademy.com"><img src={telerikLogo} alt="Telerik Academy" /></a>
                             </div>
                         </div>
                     </div>

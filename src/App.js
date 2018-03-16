@@ -29,7 +29,7 @@ class App extends Component {
         <Countdown />
         <AboutTheEvent />
 		    <Awards />
-        <Mentors />
+        {/* <Mentors /> */}
         <Jury />
         <Schedule />
         <Partners />
