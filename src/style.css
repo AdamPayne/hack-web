@@ -635,6 +635,31 @@ footer ul li:hover {
     margin-top: 16px;
 }
 
+/* Schedule
+===================================== */
+
+#schedule {
+    margin-bottom: 89px;
+}
+
+#schedule .day {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1em;
+    width: 100%;
+    text-align: center;
+    color: #0009BD;
+}
+
+#schedule table {
+    width: 100%;
+}
+
+#schedule table td {
+    border: 1px solid #e5e5e5;
+    padding: 0.5em;
+}
+
 /* Responsive Design
 ===================================== */
 

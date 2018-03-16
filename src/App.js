@@ -13,6 +13,7 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import Mentors from './components/Mentors';
 import Jury from './components/Jury';
+import Schedule from './components/Schedule';
 
 class App extends Component {
   componentDidMount() {
@@ -30,6 +31,7 @@ class App extends Component {
 		    <Awards />
         <Mentors />
         <Jury />
+        <Schedule />
         <Partners />
         <FAQSignUp />
 		    <ContactUs />
