@@ -6,6 +6,7 @@ class Navigation extends React.Component {
             <nav>
                 <ul>
                     <li><a href="#about-the-event">About the Event</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#awards">Awards</a></li>
                     {/* <li><a href="#mentors">Mentors</a></li> */}
                     <li><a href="#jury">Jury</a></li>
