@@ -9,12 +9,12 @@ class Header extends React.Component {
             <header>
                 <div className="container">
                     <div className="row">
-                        <div className="col-xs-4">
+                        <div className="col-md-2">
                             <a href="#featured">
                                 <img src={logo} alt="HackAUBG Logo" />
                             </a>
                         </div>
-                        <div className="col-xs-8 text-right">
+                        <div className="col-md-10 text-right">
                             <Navigation />
                         </div>
                     </div>

@@ -30,7 +30,7 @@ class App extends Component {
         <AboutTheEvent />
         <Schedule />
 		    <Awards />
-        {/* <Mentors /> */}
+        <Mentors />
         <Jury />
         <Partners />
         <FAQSignUp />
