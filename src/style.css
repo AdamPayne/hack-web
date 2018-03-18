@@ -668,6 +668,18 @@ footer ul li:hover {
     padding: 0.5em;
 }
 
+/* Challenge
+===================================== */
+
+#challenge { margin-bottom: 89px; }
+
+#challenge img { max-width: 100%; }
+
+#challenge .button:hover { 
+    text-decoration: none;
+    opacity: 0.9;
+}
+
 /* Responsive Design
 ===================================== */
 

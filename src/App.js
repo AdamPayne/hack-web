@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import Mentors from './components/Mentors';
 import Jury from './components/Jury';
 import Schedule from './components/Schedule';
+import Challenge from './components/Challenge';
 
 class App extends Component {
   componentDidMount() {
@@ -30,6 +31,7 @@ class App extends Component {
         <AboutTheEvent />
         <Schedule />
 		    <Awards />
+        <Challenge />
         <Mentors />
         <Jury />
         <Partners />
