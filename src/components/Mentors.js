@@ -15,6 +15,8 @@ import centroidaGavrilPhoto from '../assets/mentors/Centroida_Gavril_Tonev.jpg';
 import centroidaStefanPhoto from '../assets/mentors/Centroida_Stefan_Lazov.jpg';
 import kaloyanKolevPhoto from '../assets/mentors/Kaloyan_Kolev.jpg';
 
+import codinggirlsAnnaPhoto from '../assets/mentors/Coding_Girls_Anna_Radulovski.jpg';
+import ivoRadulovskiPhoto from '../assets/mentors/Ivo_Radulovski.jpg';
 import stefanIvanovPhoto from '../assets/mentors/Stefan_Ivanov.jpg';
 
 class Mentors extends React.Component {
@@ -38,6 +40,11 @@ class Mentors extends React.Component {
 					<Person photo={centroidaStefanPhoto} name="Stefan Lazov" position="Deep Learning Engineer, Centroida" biography="Prior experience in the following technologies: ASP.NET WebAPI, ASP.NET Core Web API, SQL Server, RabbitMQ, MongoDB and PostgreSQL.Prior experience in Machine Learning and Artificial Intelligence. Participation in projects related to the following fields: Image Recognition, Adversarial Samples and Natural Language Processing (Sentiment Analysis). Prior Experience in using the following Machine Learning and Artificial Intelligence tools: Languages-Python, R, TensorFlow and Keras libraries."></Person>
 					<Person photo={kaloyanKolevPhoto} name="Kaloyan Kolev" position="Full Stack Web Developer" biography="I am a web developer, who likes to look at questions on Stackoverflow regarding both the front-end and the back-end of web applications. Mostly I work with technologies related to PHP and Javascript."></Person>
 				</div>
+				{/* <div className="row">
+					<Person photo={codinggirlsAnnaPhoto} name="Anna Radulovski" position="Founder and CEO, Coding Girls" biography="Anna is an activist, community engineer and public speaker. She is holding a Master in Philology and focusing on Technical Education for girls. Anna is passionate about making the world a better place and making a positive change with the help of code. She has an eye for design and is highly skilled in communications. In her daily work, she faces challenges with a smile, focusing on coming up with new ideas, while motivating and connecting the right people and teams, towards feasible solutions, presented in a fashionable way."></Person>
+					<Person photo={ivoRadulovskiPhoto} name="Ivo Radulovski" position="Managing Partner, trio-group" biography="Ivo Radulovski is an expert in Digital Strategy. As entrepreneur he founded alongside several global digital agencies, the comparison platforms Versichern24.at, Eversport and several other companies. As Startup Evangelist and Growth Hacker at Segments Accelerator, he has started and supported many businesses in Central and Eastern Europe. Ivo is frequently speaking at events like the Global Webit Congress, DrupalCon and other major conferences around the world. His speeches cover topics from Entrepreneurship, Business Development and Digital Strategies to Open Source adoption in Government. His current focus is on “Enterprise IT Strategy and Organizational Changes”."></Person>
+					<Person photo={stefanIvanovPhoto} name="Stefan Ivanov" position="Research and Development Engineer" biography="The valedictorian of class of 2017 in AUBG, with majors in mathematics and computer science and former president of the innovation club – the Hub.  Currently works at Chaos Group in the Engineering R&D team with a focus of introducing tools and practices for safer and more sustainable development process. A functional and generic programming enthusiast with special interest in their mathematical formalisms and their applications to applied areas such as computer graphics and artificial intelligence. Loves to go to the gym to take his mind off the hard-to-solve tech problems."></Person>
+				</div> */}
 			</div>
 		);
 	}
