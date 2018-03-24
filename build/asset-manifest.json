@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.afb5ac81.css",
   "main.css.map": "static/css/main.afb5ac81.css.map",
-  "main.js": "static/js/main.17e075b5.js",
-  "main.js.map": "static/js/main.17e075b5.js.map",
+  "main.js": "static/js/main.3006ea27.js",
+  "main.js.map": "static/js/main.3006ea27.js.map",
   "static\\media\\AUBG_Daily.png": "static/media/AUBG_Daily.0b14573a.png",
   "static\\media\\Centroida_Gavril_Tonev.jpg": "static/media/Centroida_Gavril_Tonev.34bb109b.jpg",
   "static\\media\\Centroida_Stefan_Lazov.jpg": "static/media/Centroida_Stefan_Lazov.b1be4e60.jpg",
@@ -16,6 +16,7 @@
   "static\\media\\Jury_Mihail_Valkov.jpg": "static/media/Jury_Mihail_Valkov.8af4e4f1.jpg",
   "static\\media\\Jury_Yavor_Kiryakov.jpg": "static/media/Jury_Yavor_Kiryakov.2d79d555.jpg",
   "static\\media\\Kaloyan_Kolev.jpg": "static/media/Kaloyan_Kolev.c43b7cbd.jpg",
+  "static\\media\\MobiSystems_Iliyan_Kafedzhiev.jpg": "static/media/MobiSystems_Iliyan_Kafedzhiev.c7094b05.jpg",
   "static\\media\\Move_bg.png": "static/media/Move_bg.f5638fd9.png",
   "static\\media\\Progress_Kamen_Velikov.jpg": "static/media/Progress_Kamen_Velikov.a91cd7c1.jpg",
   "static\\media\\ScaleFocus_Vasil_Georgiev.jpg": "static/media/ScaleFocus_Vasil_Georgiev.ef55bfc0.jpg",
@@ -25,7 +26,7 @@
   "static\\media\\background.jpg": "static/media/background.c48aa099.jpg",
   "static\\media\\bnr_blagoevgrad.jpg": "static/media/bnr_blagoevgrad.a097b633.jpg",
   "static\\media\\centroida.png": "static/media/centroida.ae0bac91.png",
-  "static\\media\\coding_girls.png": "static/media/coding_girls.93379e2c.png",
+  "static\\media\\coding_girls.png": "static/media/coding_girls.771f4228.png",
   "static\\media\\cores_networks.png": "static/media/cores_networks.2a8285fd.png",
   "static\\media\\cup_first_place.png": "static/media/cup_first_place.4b614b2d.png",
   "static\\media\\cup_second_place.png": "static/media/cup_second_place.2d42b28c.png",
@@ -61,5 +62,7 @@
   "static\\media\\scalefocus.png": "static/media/scalefocus.588f5151.png",
   "static\\media\\siteground.png": "static/media/siteground.47b3d726.png",
   "static\\media\\sumup.png": "static/media/sumup.c2af6f86.png",
-  "static\\media\\vevesti.png": "static/media/vevesti.5dc5e4f8.png"
+  "static\\media\\uspelite.png": "static/media/uspelite.c7d011b4.png",
+  "static\\media\\vevesti.png": "static/media/vevesti.5dc5e4f8.png",
+  "static\\media\\webit.png": "static/media/webit.e8ad1550.png"
 }

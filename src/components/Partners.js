@@ -35,12 +35,14 @@ import inewsLogo from '../assets/partners/inews.png';
 import moveBgLogo from '../assets/partners/Move_bg.png';
 import pamedia from '../assets/partners/logopamediа.png';
 import peikaLogo from '../assets/partners/peika_bg.jpg';
+import uspeliteLogo from '../assets/partners/uspelite.png';
 import vevestiLogo from '../assets/partners/vevesti.png';
 import vipMagazineLogo from '../assets/partners/VIP_Magazine_logo.png';
 
 // Industry
-import telerikLogo from '../assets/partners/telerik_academy.png';
 import codingGirlsLogo from '../assets/partners/coding_girls.png';
+import telerikLogo from '../assets/partners/telerik_academy.png';
+import webitLogo from '../assets/partners/webit.png';
 
 
 class Partners extends React.Component {
@@ -230,14 +232,19 @@ class Partners extends React.Component {
                                 <a href="http://www.peika.bg"><img src={peikaLogo} alt="Peika.bg" /></a>
                             </div>
                         </div>
+                        <div className="col-md-6  text-center">
+                            <div className="partner">
+                                <a href="http://uspelite.bg"><img src={uspeliteLogo} alt="uspelite.bg" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="http://vevesti.bg"><img src={vevestiLogo} alt="vEvesti.bg" /></a>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center">
+                        <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="http://spisanievip.com"><img src={vipMagazineLogo} alt="VIP Magazine" /></a>
                             </div>
@@ -257,6 +264,13 @@ class Partners extends React.Component {
                         <div className="col-md-6 text-center">
                             <div className="partner">
                                 <a href="http://telerikacademy.com"><img src={telerikLogo} alt="Telerik Academy" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 col-md-offset-3 text-center">
+                            <div className="partner">
+                                <a href="http://www.webit.org"><img src={webitLogo} alt="WEBIT FESTIVAL EUROPE" /></a>
                             </div>
                         </div>
                     </div>
